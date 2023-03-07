@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65577625e3b5f344a8a2192ecf900513, type: 3}
+  m_Name: BuildGarage
+  m_EditorClassIdentifier: 
+  Name: BuildGarage
+  DisplayName: Garage
+  WindupTime: 0
+  ChannellTime: 0
+  Duration: 0
+  CoolDown: 0
+  FoodCost: 0
+  GoldCost: 0
+  WoodCost: 0
+  CapitalCost: 0
+  RequiresTargeting: 0
+  AbilityProjectileOrEffectBehaviour: 2
+  ProjectileOrEffectOriginal: {fileID: 0}

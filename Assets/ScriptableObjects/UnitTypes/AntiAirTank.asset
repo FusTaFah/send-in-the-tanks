@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f3c961ecc1773b41ae9b8eb7cb5dd46, type: 3}
+  m_Name: AntiAirTank
+  m_EditorClassIdentifier: 
+  Name: AntiAir
+  DisplayName: Anti Air Tank
+  UnitOriginalPrefab: {fileID: 3281715292734830005, guid: 0d91d4145a3cdb94a8cb8144fc1a75c3, type: 3}
+  MaximumHealth: 0
+  Armour: 0
+  Damage: 0
+  ProjectileOriginalPrefab: {fileID: 0}
+  Range: 0
+  Speed: 0
+  MobilityDetail: 1
+  Abilities:
+  - {fileID: 11400000, guid: a0116b9603055d242942fba5b907139b, type: 2}

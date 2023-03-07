@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 917b9550837a8124893e2d547c3fa511, type: 3}
+  m_Name: Garage
+  m_EditorClassIdentifier: 
+  Name: Garage
+  DisplayName: Vehicle Garage
+  UnitSpawnerOriginalPrefab: {fileID: 1028637638583533577, guid: a8fad79d7a1589f4e8190258c90412df, type: 3}
+  SpawnableUnits:
+  - {fileID: 11400000, guid: 6717d0ec0be71fe4680efbd10841fe9b, type: 2}
+  TotalUnits: {fileID: 11400000, guid: 595377c34f47e5a458ee2a6c0128348d, type: 2}
