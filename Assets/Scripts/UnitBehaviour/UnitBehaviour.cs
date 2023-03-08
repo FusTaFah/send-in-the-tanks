@@ -19,6 +19,19 @@ public class UnitBehaviour : MonoBehaviour
     private GameObject ProjectileOriginal;
     public int Range;
     public int MovementSpeed;
+
+    private ActionState actionState = ActionState.IDLE;
+
+    private enum ActionState
+    {
+        IDLE,
+        MOVING_TO_POINT,
+        MOVING_TO_ATTACK,
+        ATTACKING,
+        PATROL,
+        DEAD
+    }
+
     private enum MovementState
     {
         Startup,
@@ -49,6 +62,7 @@ public class UnitBehaviour : MonoBehaviour
     public void MoveTo(Vector3 position)
     {
         agent.SetDestination(position);
+        actionState = ActionState.MOVING_TO_POINT;
     }
 
     public void Attack(UnitBehaviour unit)
