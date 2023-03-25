@@ -20,6 +20,8 @@ public class UnitBehaviour : MonoBehaviour
     public int Range;
     public int MovementSpeed;
 
+    private UnitBehaviour attackTarget;
+    private UnitSpawnerBehaviour demolitionTarget;
     private ActionState actionState = ActionState.IDLE;
 
     private enum ActionState
@@ -27,6 +29,7 @@ public class UnitBehaviour : MonoBehaviour
         IDLE,
         MOVING_TO_POINT,
         MOVING_TO_ATTACK,
+        ATTACK_MOVE,
         ATTACKING,
         PATROL,
         DEAD
@@ -67,6 +70,22 @@ public class UnitBehaviour : MonoBehaviour
 
     public void Attack(UnitBehaviour unit)
     {
+        actionState = ActionState.MOVING_TO_ATTACK;
+        attackTarget = unit;
+    }
+
+    public void Attack(UnitSpawnerBehaviour spawner)
+    {
+        actionState = ActionState.MOVING_TO_ATTACK;
+        demolitionTarget = spawner;
+    }
+
+    /// <summary>
+    /// Move towards the specified position but attack the closest enemy unit along the way.
+    /// </summary>
+    /// <param name="position"></param>
+    public void AttackMove(Vector3 position)
+    {
 
     }
 
@@ -78,5 +97,31 @@ public class UnitBehaviour : MonoBehaviour
     public void UseAbility(int abilityNumber)
     {
 
+    }
+
+    //private bool CheckRangeToTarget()
+    //{
+    //    if( gameObject.transform.position)
+    //}
+
+    private void Update()
+    {
+        switch (actionState)
+        {
+            case ActionState.IDLE:
+                break;
+            case ActionState.MOVING_TO_POINT:
+                break;
+            case ActionState.MOVING_TO_ATTACK:
+                break;
+            case ActionState.ATTACK_MOVE:
+                break;
+            case ActionState.ATTACKING:
+                break;
+            case ActionState.PATROL:
+                break;
+            case ActionState.DEAD:
+                break;
+        }
     }
 }
