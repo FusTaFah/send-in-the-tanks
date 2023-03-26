@@ -151,7 +151,7 @@ public class Controls : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.L))
         {
             cursorConfined = !cursorConfined;
         }
